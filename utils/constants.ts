@@ -13,12 +13,12 @@ export const PAGE_ROUTES = {
 };
 
 export const NAV_OPTIONS = [
-  {
-    name: 'Home',
-    url: PAGE_ROUTES.HOME,
-    selectedLogo: '/icons/home.svg',
-    unSelectedLogo: '/icons/home-deselected.svg',
-  },
+  // {
+  //   name: 'Home',
+  //   url: PAGE_ROUTES.HOME,
+  //   selectedLogo: '/icons/home.svg',
+  //   unSelectedLogo: '/icons/home-deselected.svg',
+  // },
   {
     name: 'Teams',
     url: PAGE_ROUTES.TEAMS,
@@ -88,13 +88,7 @@ export const EVENTS = {
   TRIGGER_DIALOG_LOADER: 'trigger-dialog-loader',
 };
 
-export const HELPER_MENU_OPTIONS = [
-  // {
-  //   icon: '/icons/submitteam.svg',
-  //   name: 'Submit a Team',
-  //   type: 'button',
-  //   isExternal: false,
-  // },
+export const PROFILE_MENU_OPTIONS = [
   {
     icon: '/icons/message.svg',
     name: 'ProtoSphere',
@@ -102,6 +96,15 @@ export const HELPER_MENU_OPTIONS = [
     url: process.env.PROTOSPHERE_URL,
     isExternal: true,
   },
+];
+
+export const HELPER_MENU_OPTIONS = [
+  // {
+  //   icon: '/icons/submitteam.svg',
+  //   name: 'Submit a Team',
+  //   type: 'button',
+  //   isExternal: false,
+  // },
   {
     icon: '/icons/question-circle-grey.svg',
     name: 'Get Support',
@@ -373,6 +376,19 @@ export const MEMBER_ANALYTICS_EVENTS = {
   MEMBER_DETAIL_EDIT_EXPERIENCE_SAVE_CLICKED: 'member_detail_edit_experience_save_clicked',
   MEMBER_DETAIL_ADD_EXPERIENCE_SAVE_CLICKED: 'member_detail_add_experience_save_clicked',
   MEMBER_DETAIL_DELETE_EXPERIENCE_SAVE_CLICKED: 'member_detail_delete_experience_save_clicked',
+
+  MEMBER_DETAILS_BY_RECOMMENDATION_EMAIL_LINK: 'member-details-by-recommendation-email-link',
+};
+
+export const UNIFIED_SEARCH_ANALYTICS_EVENTS = {
+  AUTOCOMPLETE_SEARCH: 'autocomplete-search',
+  FULL_SEARCH: 'full-search',
+  SEARCH_RESULT_CLICK: 'search-result-click',
+  FULL_SEARCH_OPEN: 'full-search-open',
+  RECENT_SEARCH_CLICK: 'recent-search-click',
+  RECENT_SEARCH_DELETE_CLICK: 'recent-search-delete-click',
+  AI_CONVERSATION_HISTORY_CLICK: 'ai-conversation-history-click',
+  AI_CONVERSATION_HISTORY_OPEN_CLICK: 'ai-conversation-history-open-click',
 };
 
 export const IRL_ANALYTICS_EVENTS = {};
@@ -525,6 +541,20 @@ export const EVENT_TYPE = {
 export const OH_GUIDELINE_URL = 'https://protosphere.plnetwork.io/posts/Office-Hours-Guidelines-and-Tips-clsdgrbkk000ypocoqsceyfaq';
 
 export const ChangeLogList = [
+  {
+    title: 'Version 4.1.13 - Directory Enhancements',
+    tag: 'Improvements',
+    date: '03, Jun 2025',
+    shortContent: `
+    <div style="font-size: 14px; line-height:23px;">
+    <span style="font-size: 14px;line-height:23px; font-weight: 600">New Features & Enhancements</span><br/>
+    <ul style="padding-left:32px; margin-bottom:15px; font-size: 14px; line-height:23px; list-style: disc;">
+    <li><span style="font-size: 14px;line-height:23px; font-weight: 600">Unified Search</span> - Introduced a faster, general-purpose search that seamlessly integrates with AI-powered search capabilities.</li>
+    <li><span style="font-size: 14px;line-height:23px; font-weight: 600">User Contact Visibility</span> - Users can now see what types of contact information are associated with a member without logging in. Actual contact details remain hidden until login</li>
+    <li><span style="font-size: 14px;line-height:23px; font-weight: 600">Performance Optimization</span> - Improved AI Search responsiveness and enhanced infinite scroll performance on several pages</li>
+    </ul>
+    </div>`,
+  },
   {
     title: 'Version 4.1.12 - Directory Enhancements',
     tag: 'Improvements',
